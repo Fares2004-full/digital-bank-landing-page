@@ -1,0 +1,30 @@
+*{ 
+  margin: 0;
+  padding: 0;
+ box-sizing: border-box; 
+}
+:root {
+  --Blue: hsl(233, 26%, 24%);
+  --Green: hsl(136, 64%, 51%);
+  --Cyan: hsl(192, 69%, 51%);
+  --Gray600: hsl(233, 8%, 62%);
+  --Gray100: rgb(243, 244, 246);
+  --Gray50: hsl(0, 0%, 98%);
+  --White: hsl(0, 100%, 100%);
+}
+
+body{
+  font-family: 'Public Sans', sans-serif;
+}
+nav{
+  box-shadow: 1px 1px 15px rgba(220, 221, 223, 0.459);
+}
+.request-button {
+  color: var(--White);
+  font-family: inherit;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 10px 30px;
+  background: linear-gradient(200deg, var(--Green), var(--Cyan));
+
+}
