@@ -65,6 +65,7 @@ background-color: var(--Green);
   width: 100%;
   height: auto;
 }
+
  .auther{
   font-size: 0.8em;
  }
@@ -129,8 +130,14 @@ position: relative;
 top: -75em;
 right: -7em;
 z-index: 999;
+animation: moveUpDown 2s ease-in-out infinite;
 }
 
+  @keyframes moveUpDown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
 
 .footer {
   background-color: var(--Blue);
@@ -142,7 +149,7 @@ z-index: 999;
 }
 
 
-@media (min-width:300px) and (max-width:1440px) {
+@media (min-width:300px) and (max-width:700px) {
   .section1 {
     height: 90vb;
   }
@@ -192,8 +199,9 @@ z-index: 999;
   .section3 .card {
     margin-left: auto;
     margin-right: auto;
+    
   }
-
+ 
 .section2 .div1 p{
   width: auto;
 } 
@@ -201,4 +209,13 @@ z-index: 999;
   text-align: center;
  
 } 
+}
+@media (min-width:700px) and (max-width:1300px) { 
+  .section3 .row{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  justify-content: space-between;
+
+}
+
 }
