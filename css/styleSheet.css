@@ -35,6 +35,18 @@ nav{
 opacity: 0.7;
 color: var(--White) ;
 }
+.card-title:hover{
+color: var(--Green);
+cursor: pointer;
+}
+.nav-link{
+  transition:ease 0.4s;
+}
+.nav-link:hover{
+border-radius: 10px;
+background-color: var(--Green);
+}
+
 .section1,.section2{
   box-shadow: 1px 1px 15px rgba(220, 221, 223, 0.459);
   height: 85vb;
@@ -119,6 +131,15 @@ right: -7em;
 z-index: 999;
 }
 
+
+.footer {
+  background-color: var(--Blue);
+}
+
+.footer-links p a:hover {
+  color: hsl(136, 65%, 51%) !important;
+
+}
 
 
 @media (min-width:300px) and (max-width:1440px) {

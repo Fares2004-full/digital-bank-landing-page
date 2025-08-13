@@ -1,221 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-7.0.0-web/css/all.min.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="fontawesome-free-7.0.0-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="fontawesome-free-7.0.0-web/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styleSheet.css" />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Left: Logo -->
 
-  <link rel="stylesheet" href="bootstrap-5.3.7-dist/css/bootstrap.css">
-  <link rel="stylesheet" href="css/styleSheet.css">
-</head>
+        <a class="navbar-brand main-link h1" href="index.html"
+          ><img src="images/logo-dark.svg"
+        /></a>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light py-3">
-    <div class="container d-flex justify-content-between align-items-center">
+        <!-- Center: Nav links -->
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+          </ul>
+        </div>
 
-      <!-- Left: Logo -->
+        <!-- Right: Request Invite button (hidden on small screens) -->
+        <div class="d-none d-lg-block">
+          <a href="#" class="btn request-button">Request Invite</a>
+        </div>
 
-      <a class="navbar-brand main-link h1" href="index.html"><img src="images/logo-dark.svg"></a>
+        <!-- Navbar toggler (mobile) -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <section class="section1">
+        <div class="row flex-column-reverse flex-lg-row overflow-hidden">
+          <div class="col-12 col-lg-6 col1">
+            <h1>Next generation digital banking</h1>
+            <p>
+              Take your financial life online. Your Digitalbank account will be
+              a one-stop-shop for spending, saving, budgeting, investing, and
+              much more.
+            </p>
 
-      <!-- Center: Nav links -->
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav ">
-          <li class="nav-item px-2">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item px-2">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item px-2">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item px-2">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item px-2">
-            <a class="nav-link" href="#">Careers</a>
-          </li>
-        </ul>
+            <div class="col1-button">
+              <a href="#" class="btn request-button">Request Invite</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 col2">
+            <img class="col2-img1" src="images/bg-intro-desktop.svg" alt="" />
+            <img class="col2-img2" src="images/image-mockups.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="container">
+          <div class="div1">
+            <h2>Why choose Digitalbank?</h2>
+            <p>
+              We leverage Open Banking to turn your bank accout into your
+              financial hub. Control your financial like never before.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 sec2-col">
+              <img src="images/icon-online.svg" />
+              <h4>Online Banking</h4>
+              <p>
+                Our modern web and mobile application allow you to keep track of
+                your finances wherever you are in the world.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 sec2-col">
+              <img src="images/icon-budgeting.svg" />
+              <h4>Simple Budgeting</h4>
+              <p>
+                See exactly where your money goes each month.Receive
+                notifications when you're close to hitting your limits.
+              </p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 sec2-col">
+              <img src="images/icon-onboarding.svg" />
+              <h4>Fast Onboarding</h4>
+              <p>
+                We don't do branches.Open your account in minutes online and
+                start taking control of your finances right away.
+              </p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 sec2-col">
+              <img src="images/icon-api.svg" />
+              <h4>Open API</h4>
+              <p>
+                Manage your saving,investments,pension,and much more from one
+                account. Tracking your money has never been easier.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section3">
+        <div class="container">
+          <div class="div1">
+            <h2>Latest Articles</h2>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 sec2-col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="images/image-currency.jpg"
+                  class="card-img-top"
+                  style="height: 190px"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="auther">By Claire Robinson</p>
+                  <h5 class="card-title">
+                    Receive money in any currency with no fees
+                  </h5>
+                  <p class="card-text">
+                    The world is getting smaller and we’re becoming more mobile.
+                    So why should you be forced to only receive money in a
+                    single ...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 sec2-col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="images/image-restaurant.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="auther">By Wilson Hutton</p>
+                  <h5 class="card-title">
+                    Treat yourself without worrying about money
+                  </h5>
+                  <p class="card-text">
+                    Our simple budgeting feature allows you to separate out your
+                    spending and set realistic limits each month. That means you
+                    ...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 sec2-col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="images/image-plane.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="auther">By Wilson Hutton</p>
+                  <h5 class="card-title">
+                    Take your Digitalbank card wherever you go
+                  </h5>
+                  <p class="card-text">
+                    We want you to enjoy your travels. This is why we don’t
+                    charge any fees for purchases while you’re abroad. We’ll
+                    even ...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 sec2-col">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="images/image-confetti.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="auther">By Claire Robinson</p>
+                  <h5 class="card-title">
+                    Our invite-only Beta accounts are now live!
+                  </h5>
+                  <p class="card-text">
+                    After a lot of hard work by the whole team, we’re excited to
+                    launch our closed beta. It’s easy to request an invite
+                    through ...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+<footer class="footer  text-white py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+  
+      <div class="col-12 col-md-4 mb-4 mb-md-0 text-center text-md-start">
+        <img src="images/logo-light.svg" alt="Digitalbank" class="mb-5">
+        
+        <div class="social-icons d-flex justify-content-center justify-content-md-start gap-3">
+          <a href="#"><i class="fab fa-facebook-f text-white"></i></a>
+          <a href="#"><i class="fab fa-youtube text-white"></i></a>
+          <a href="#"><i class="fab fa-twitter text-white"></i></a>
+          <a href="#"><i class="fab fa-pinterest text-white"></i></a>
+          <a href="#"><i class="fab fa-instagram text-white"></i></a>
+        </div>
       </div>
 
-      <!-- Right: Request Invite button (hidden on small screens) -->
-      <div class="d-none d-lg-block">
-        <a href="#" class="btn request-button">Request Invite</a>
+  
+      <div class="col-12 col-md-4 mb-4 mb-md-0">
+        <div class="row text-center text-md-start    footer-links">
+          <div class=" col-sm-12 col-lg-6 ">
+            <p><a href="#" class="text-white text-decoration-none">About Us</a></p>
+            <p><a href="#" class="text-white text-decoration-none">Contact</a></p>
+            <p><a href="#" class="text-white text-decoration-none">Blog</a></p>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+            <p><a href="#" class="text-white text-decoration-none">Careers</a></p>
+            <p><a href="#" class="text-white text-decoration-none">Support</a></p>
+            <p><a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+          </div>
+        </div>
       </div>
 
-      <!-- Navbar toggler (mobile) -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    
+      <div class="col-12 col-md-4 text-center text-md-end">
+
+       
+          <a href="#" class="btn request-button mb-3">Request Invite</a>
+        <p class="mb-0 small text-secondary">&copy; Digitalbank. All Rights Reserved</p>
+        
+      </div>
 
     </div>
-  </nav>
-  <main>
-    <section class="section1">
-      <div class="row flex-column-reverse flex-lg-row overflow-hidden">
-
-
-        <div class="col-12 col-lg-6 col1">
-          <h1>Next generation digital banking</h1>
-          <p>
-            Take your financial life online. Your Digitalbank account will be a one-stop-shop for spending, saving,
-            budgeting, investing, and much more.
-          </p>
-
-          <div class="col1-button">
-            <a href="#" class="btn request-button">Request Invite</a>
-          </div>
-        </div>
-
-
-        <div class=" col-12 col-lg-6 col2">
-
-          <img class="col2-img1" src="images/bg-intro-desktop.svg" alt="">
-          <img class="col2-img2" src="images/image-mockups.png" alt="">
-        </div>
-
-      </div>
-    </section>
-    <section class="section2">
-
-
-      <div class="container">
-        <div class="div1">
-          <h2>Why choose Digitalbank?</h2>
-          <p>We leverage Open Banking to turn your bank accout into your financial hub. Control your financial like
-            never before.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-3 sec2-col">
-            <img src="images/icon-online.svg">
-            <h4>Online Banking</h4>
-            <p>Our modern web and mobile application allow you to keep track of your finances wherever you are in the
-              world.
-            </p>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-3  sec2-col">
-            <img src="images/icon-budgeting.svg">
-            <h4>Simple Budgeting </h4>
-            <p>See exactly where your money goes each month.Receive notifications when you're close to hitting your
-              limits.
-            </p>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3  sec2-col">
-            <img src="images/icon-onboarding.svg">
-            <h4>Fast Onboarding</h4>
-            <p>We don't do branches.Open your account in minutes online and start taking control of your finances right
-              away.
-            </p>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-3 sec2-col">
-            <img src="images/icon-api.svg">
-            <h4>Open API</h4>
-            <p>Manage your saving,investments,pension,and much more from one account. Tracking your money has never been
-              easier.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-    <section class="section3">
-
-
-
-      <div class="container">
-        <div class="div1">
-          <h2>Latest Articles</h2>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-3 sec2-col">
-
-            <div class="card" style="width: 18rem;">
-              <img src="images/image-currency.jpg" class="card-img-top "style="height: 190px"   alt="...">
-              <div class="card-body">
-                
-                <p class="auther">By Claire Robinson</p>
-                <h5 class="card-title">Receive money in any currency with no fees</h5>
-                <p class="card-text">
-                  The world is getting smaller and we’re becoming more mobile. So why should you be forced to only
-                  receive money
-                  in a single ...</p>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-3 sec2-col">
-
-            <div class="card" style="width: 18rem;">
-              <img src="images/image-restaurant.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p  class="auther">By Wilson Hutton</p>
-                <h5 class="card-title">Treat yourself without worrying about money
-                </h5>
-                <p class="card-text">
-                  Our simple budgeting feature allows you to separate out your spending and set realistic limits each
-                  month. That means you ...</p>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-3 sec2-col">
-
-            <div class="card" style="width: 18rem;">
-              <img src="images/image-plane.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p   class="auther">By Wilson Hutton</p>
-                <h5 class="card-title">Take your Digitalbank card wherever you go
-                </h5>
-                <p class="card-text">
-                  We want you to enjoy your travels. This is why we don’t charge any fees for purchases while you’re
-                  abroad. We’ll even ...</p>
-
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-3 sec2-col">
-
-            <div class="card" style="width: 18rem;">
-              <img src="images/image-confetti.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p   class="auther">By Claire Robinson</p>
-                <h5 class="card-title">Our invite-only Beta accounts are now live!</h5>
-                <p class="card-text">
-                  After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to
-                  request an invite through ...</p>
-
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-  </main>
-
-
-  <script src="bootstrap-5.3.7-dist/js/popper.min.js"></script>
-  <script src="bootstrap-5.3.7-dist/js/jquery-3.7.1.min.js"></script>
-  <script src="bootstrap-5.3.7-dist/js/bootstrap.js"></script>
-</body>
-
+  </div>
+</footer>
+    <script src="bootstrap-5.3.7-dist/js/popper.min.js"></script>
+    <script src="bootstrap-5.3.7-dist/js/jquery-3.7.1.min.js"></script>
+    <script src="bootstrap-5.3.7-dist/js/bootstrap.js"></script>
+  </body>
 </html>
